@@ -44,3 +44,10 @@ It's a modern replacement for fbgrab.
 %{_mandir}/man1/fbcat.1*
 %{_mandir}/man1/fbgrab.1*
 
+
+
+%changelog
+* Sat Aug 25 2012 Andrey Bondrov <abondrov@mandriva.org> 1:0.3-1
++ Revision: 815726
+- imported package fbcat
+
