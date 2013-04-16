@@ -1,14 +1,14 @@
 Summary:	Framebuffer screenshot program
 Name:		fbcat
+Epoch:		1
 Version:	0.3
 Release:	1
-Epoch:		1
 License:	GPLv2+
 Group:		Graphics
 Url:		http://code.google.com/p/fbcat/
-Source:		http://fbcat.googlecode.com/files/%{name}-%{version}.tar.gz
-BuildRequires:	xsltproc
+Source0:	http://fbcat.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRequires:	docbook-style-xsl
+BuildRequires:	xsltproc
 %rename fbgrab
 
 %description
@@ -30,12 +30,12 @@ It's a modern replacement for fbgrab.
 %make -C doc
 
 %install
-%__mkdir_p %{buildroot}%{_bindir}
-%__install -m 755 fbcat %{buildroot}%{_bindir}/
-%__install -m 755 fbgrab %{buildroot}%{_bindir}/
-%__mkdir_p %{buildroot}%{_mandir}/man1/
-%__install -m 755 doc/fbcat.1 %{buildroot}%{_mandir}/man1/
-%__install -m 755 doc/fbgrab.1 %{buildroot}%{_mandir}/man1/
+mkdir -p %{buildroot}%{_bindir}
+install -m 755 fbcat %{buildroot}%{_bindir}/
+install -m 755 fbgrab %{buildroot}%{_bindir}/
+mkdir -p %{buildroot}%{_mandir}/man1/
+install -m 755 doc/fbcat.1 %{buildroot}%{_mandir}/man1/
+install -m 755 doc/fbgrab.1 %{buildroot}%{_mandir}/man1/
 
 %files
 %doc COPYING
@@ -43,11 +43,4 @@ It's a modern replacement for fbgrab.
 %{_bindir}/fbgrab
 %{_mandir}/man1/fbcat.1*
 %{_mandir}/man1/fbgrab.1*
-
-
-
-%changelog
-* Sat Aug 25 2012 Andrey Bondrov <abondrov@mandriva.org> 1:0.3-1
-+ Revision: 815726
-- imported package fbcat
 
