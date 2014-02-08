@@ -2,7 +2,7 @@ Summary:	Framebuffer screenshot program
 Name:		fbcat
 Epoch:		1
 Version:	0.3
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphics
 Url:		http://code.google.com/p/fbcat/
