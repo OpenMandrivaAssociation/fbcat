@@ -1,3 +1,5 @@
+%define _disable_lto 1
+
 Summary:	Framebuffer screenshot program
 Name:		fbcat
 Epoch:		1
