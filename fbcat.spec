@@ -7,7 +7,7 @@ Version:	0.3
 Release:	13
 License:	GPLv2+
 Group:		Graphics
-Url:		http://code.google.com/p/fbcat/
+Url:		https://code.google.com/p/fbcat/
 Source0:	http://fbcat.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRequires:	docbook-style-xsl
 BuildRequires:	xsltproc
