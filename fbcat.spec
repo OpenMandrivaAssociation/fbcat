@@ -9,6 +9,7 @@ License:	GPLv2+
 Group:		Graphics
 Url:		https://code.google.com/p/fbcat/
 Source0:	http://fbcat.googlecode.com/files/%{name}-%{version}.tar.gz
+BuildRequires:	make
 BuildRequires:	docbook-style-xsl
 BuildRequires:	xsltproc
 %rename fbgrab
